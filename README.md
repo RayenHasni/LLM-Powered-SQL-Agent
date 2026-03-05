@@ -121,4 +121,4 @@ The SQL prompt was upgraded to be more deterministic and analyst-focused while k
 
 ## License
 
-Use this project as a portfolio/demo reference and customize it for your environment.
+This project is licensed under the [Apache License 2.0](LICENSE). You are free to use, modify, and share this project with proper attribution.
