@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/sql_agent/__init__.py
+src/sql_agent/agent.py
+src/sql_agent/config.py
+src/sql_agent/db.py
+src/sql_agent/llm.py
+src/sql_agent_gemini.egg-info/PKG-INFO
+src/sql_agent_gemini.egg-info/SOURCES.txt
+src/sql_agent_gemini.egg-info/dependency_links.txt
+src/sql_agent_gemini.egg-info/requires.txt
+src/sql_agent_gemini.egg-info/top_level.txt
