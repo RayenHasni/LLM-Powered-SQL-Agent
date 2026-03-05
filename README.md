@@ -37,7 +37,6 @@ SQL Agent/
 |-- pyproject.toml
 |-- requirements.txt
 |-- README.md
-`-- SQL_Agents.ipynb
 ```
 
 ## Tech Stack
