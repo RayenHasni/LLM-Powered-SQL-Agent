@@ -19,7 +19,7 @@ class Settings:
     db_name: str = db_name
     db_schema: str = "dbo"
     db_table: str = db_table
-    llm_model: str = "gemini-3-flash-preview"
+    llm_model: str = llm_model
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -31,7 +31,7 @@ class Settings:
             db_name=os.getenv("DB_NAME", ""),
             db_schema=os.getenv("DB_SCHEMA", "dbo"),
             db_table=os.getenv("DB_TABLE", ""),
-            llm_model=os.getenv("LLM_MODEL", ""),
+            llm_model=os.getenv("LLM_MODEL", "gemini-3-flash-preview"),
         )
 
     @property
