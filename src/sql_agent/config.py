@@ -15,10 +15,10 @@ def _load_env_file() -> None:
 class Settings:
     gemini_api_key: str = ""
     db_driver: str = "ODBC Driver 17 for SQL Server"
-    db_server: str = "DESKTOP-BDE04OR\\SQLEXPRESS"
-    db_name: str = "db_Churn"
+    db_server: str = db_server
+    db_name: str = db_name
     db_schema: str = "dbo"
-    db_table: str = "prod_Churn"
+    db_table: str = db_table
     llm_model: str = "gemini-3-flash-preview"
 
     @classmethod
@@ -27,11 +27,11 @@ class Settings:
         return cls(
             gemini_api_key=os.getenv("GEMINI_API_KEY", ""),
             db_driver=os.getenv("DB_DRIVER", "ODBC Driver 17 for SQL Server"),
-            db_server=os.getenv("DB_SERVER", "DESKTOP-BDE04OR\\SQLEXPRESS"),
-            db_name=os.getenv("DB_NAME", "db_Churn"),
+            db_server=os.getenv("DB_SERVER", ""),
+            db_name=os.getenv("DB_NAME", ""),
             db_schema=os.getenv("DB_SCHEMA", "dbo"),
-            db_table=os.getenv("DB_TABLE", "prod_Churn"),
-            llm_model=os.getenv("LLM_MODEL", "gemini-2.0-flash"),
+            db_table=os.getenv("DB_TABLE", ""),
+            llm_model=os.getenv("LLM_MODEL", ""),
         )
 
     @property
